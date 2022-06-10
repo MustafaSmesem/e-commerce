@@ -3,7 +3,7 @@ import 'constant.dart';
 
 final lightThemeData = ThemeData(
   brightness: Brightness.light,
-  primaryColor: primaryColor,
+  primarySwatch: primaryColorSwatch,
 );
 
 final darkThemeData = ThemeData(
