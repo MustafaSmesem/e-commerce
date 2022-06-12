@@ -1,6 +1,7 @@
 import 'package:ecommerce/localization/locale_constant.dart';
 import 'package:ecommerce/localization/localizations_delegate.dart';
 import 'package:ecommerce/screens/login_screen.dart';
+import 'package:ecommerce/screens/settings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce/theme.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -45,7 +46,7 @@ class _MyAppState extends State<MyApp> {
       builder: (context, child) {
         return MediaQuery(
           data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
-          child: const LoginScreen(),
+          child: const SettingsScreen(),
         );
       },
       title: 'Multi Language',
@@ -53,7 +54,7 @@ class _MyAppState extends State<MyApp> {
       theme: lightThemeData,
       darkTheme: darkThemeData,
       locale: _locale,
-      home: const LoginScreen(),
+      home: const SettingsScreen(),
       supportedLocales: const [
         Locale('en', ''),
         Locale('ar', ''),

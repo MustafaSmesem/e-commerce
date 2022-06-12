@@ -29,4 +29,8 @@ class LanguageAr extends Languages {
   @override
   String get OR => "أو";
 
+  //screens
+  @override
+  String get settings => "الإعدادات";
+
 }

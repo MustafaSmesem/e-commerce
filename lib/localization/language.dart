@@ -21,4 +21,8 @@ abstract class Languages {
   String get signUp;
   String get OR;
 
+
+  //screens
+  String get settings;
+
 }

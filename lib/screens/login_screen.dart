@@ -1,6 +1,5 @@
 import 'package:ecommerce/localization/language.dart';
 import 'package:ecommerce/localization/locale_constant.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce/constant.dart';
 
@@ -142,20 +141,6 @@ class _LoginScreenState extends State<LoginScreen> {
                         style: outlineButtonStyle,
                         onPressed: () {},
                         child: Text(Localizations.of(context, Languages).signUp),
-                      ),
-                      OutlinedButton(
-                        style: outlineButtonStyle,
-                        onPressed: () {
-                          changeLanguage(context, "ar");
-                        },
-                        child: const Text("AR"),
-                      ),
-                      OutlinedButton(
-                        style: outlineButtonStyle,
-                        onPressed: () {
-                          changeLanguage(context, "en");
-                        },
-                        child: const Text("EN"),
                       ),
                     ],
                   ),
