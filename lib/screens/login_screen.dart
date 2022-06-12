@@ -143,6 +143,20 @@ class _LoginScreenState extends State<LoginScreen> {
                         onPressed: () {},
                         child: Text(Localizations.of(context, Languages).signUp),
                       ),
+                      OutlinedButton(
+                        style: outlineButtonStyle,
+                        onPressed: () {
+                          changeLanguage(context, "ar");
+                        },
+                        child: const Text("AR"),
+                      ),
+                      OutlinedButton(
+                        style: outlineButtonStyle,
+                        onPressed: () {
+                          changeLanguage(context, "en");
+                        },
+                        child: const Text("EN"),
+                      ),
                     ],
                   ),
                 ),
